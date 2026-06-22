@@ -101,6 +101,9 @@ footer {
     .logo-block {
         flex-direction: column;
         text-align: center;
+    .section {
+        padding: 20px;
+    }
     }
 
     nav ul {
