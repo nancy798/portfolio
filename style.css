@@ -79,6 +79,8 @@ section{
     width: 50%;
     max-height: 300px;
     object-fit: cover;
+    height:auto;
+    display:block;
     
 }
 
