@@ -52,14 +52,12 @@
         <p><b>Телефон:</b> +380 98 765 43 21</p>
 
     </div>
-
-    <form class="contact-form" action="https://formspree.io/f/xaqgwakj" method="POST">
-        <input type="text" placeholder="Ваше ім'я" required>
-        <input type="email" placeholder="Ваш email" required>
-        <textarea placeholder="Ваше повідомлення" rows="5" required></textarea>
-
+    
+    <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Ваше повідомлення" rows="5" required></textarea>
         <button type="submit">Надіслати</button>
-
     </form>
 </main>
 
@@ -68,6 +66,6 @@
 <footer>
     <p>© 2026 Веб-портфоліо Рибальченко Анастасії</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
