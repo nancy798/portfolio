@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
             const frameBox = lesson.querySelector(".frameBox");
             const url = this.href;
 
-            // якщо iframe вже є → закрити
             if (frameBox.querySelector("iframe")) {
                 frameBox.innerHTML = "";
                 return;
             }
 
-            // інакше відкрити
+            
             frameBox.innerHTML = `
                 <iframe src="${url}" allowfullscreen></iframe>
             `;
         });
     });
 });
+
 
 
 window.carousel = () => {
@@ -67,3 +67,21 @@ window.carousel = () => {
     }
   };
 };
+
+
+
+const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    await fetch("https://formspree.io/f/xaqgwakj", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    // просто очищаємо форму без повідомлень
+    form.reset();
+  });
