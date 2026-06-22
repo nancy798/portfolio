@@ -207,3 +207,17 @@ footer {
 .dropdown:hover .dropdown-menu{
     display:block;
 }
+
+
+.frameBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.frameBox iframe {
+    width: 80%;
+    max-width: 900px;
+    height: 300px;
+    border: 0;
+}
