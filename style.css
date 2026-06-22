@@ -151,6 +151,7 @@ p{line-height:1.7;}
 .about-photo img{
     width:160px;
     border-radius:15px;
+    max-width:160px;
 }
 
 .about-text{flex:1;}
