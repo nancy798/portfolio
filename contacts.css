@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #F0EBF4;       
+    line-height: 1.6;
+    color: #444;              
+}
+
+header {
+    background: #B39BC8;       
+    border-top: 3px solid #9A7FB5;
+    padding: 12px 40px;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo { height: 75px; }
+
+.site-info h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 26px;
+}
+
+.site-info p {
+    margin: 4px 0 0;
+    color: rgba(255,255,255,.85);
+    font-size: 14px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#fff;
+    transition:.3s;
+    background:#8F74AC;
+    border-radius:8px;
+    padding:10px 5px;
+}
+
+.contacts{
+    max-width:700px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.contacts h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#6B4D88;
+}
+
+/* INFO BOX */
+.contact-box{
+    background:#fff;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+/* FORM */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-family:inherit;
+}
+
+.contact-form button{
+    background:#B39BC8;
+    color:#fff;
+    border:none;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#8F74AC;
+}
+
+
+footer{
+    background:#B39BC8;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#fff;
+}
+
+
+@media(max-width:1000px){
+    .header-container{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+}
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:240px;
+    background:#B39BC8;
+    list-style:none;
+    padding:10px 0;
+    margin:0;
+    border-radius:10px;
+    display:none;
+    z-index:1000;
+}
+
+.dropdown-menu li{
+    width:100%;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:10px 15px;
+    color:white;
+    text-decoration:none;
+}
+
+.dropdown-menu a:hover{
+    background:#8F74AC;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
