@@ -6,7 +6,6 @@ body{
     color:#444;
 }
 
-/* HEADER */
 header{
     background:#B39BC8;
     border-top:3px solid #9A7FB5;
@@ -88,7 +87,7 @@ h2{color:#6B4D88;}
 
 p{line-height:1.7;}
 
-/* PROFILE */
+
 .profile-container{
     display:flex;
     align-items:center;
@@ -128,7 +127,7 @@ p{line-height:1.7;}
     transform:translateY(-2px);
 }
 
-/* ABOUT */
+
 .about{
     max-width:1200px;
     margin:50px auto;
@@ -177,7 +176,7 @@ p{line-height:1.7;}
 
 .card li{margin-bottom:8px;}
 
-/* FOOTER */
+
 footer{
     background:#B39BC8;
     text-align:center;
@@ -186,7 +185,7 @@ footer{
     color:#fff;
 }
 
-/* MOBILE */
+
 @media(max-width:1000px){
     .header-container,
     .logo-block,
